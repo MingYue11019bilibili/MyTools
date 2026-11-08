@@ -1,0 +1,46 @@
+﻿================================================================================
+MyTools 开源与使用许可协议 (MyTools License)
+================================================================================
+
+【项目信息】
+项目名称：MyTools
+作者：B站Up主明明月明月11019
+B站空间链接：https://space.bilibili.com/3707056078982013
+
+【授权条款】
+1. 授权范围：本协议允许任何人在任何合法的软件项目（包括商业项目）中使用、复制、修改和分发本项目的全部或部分源代码。
+2. 修改与衍生：允许对本项目的代码进行任意修改和二次开发，以适配不同的使用场景。
+3. 署名与声明保留原则（极其重要）：
+   (1) 任何修改、分发或衍生版本，严禁删除位于任何版本 tools.h 同级目录下的 README.txt 文件（可以删除不需要版本内的文件）。
+   (2) 或者，您必须在您项目代码的醒目位置（如项目 README 介绍、主程序头部注释等）明确添加关于本项目 MyTools 的声明，并附上作者的 B站空间链接。
+
+【免责声明】（"按原样"提供）
+1. 本软件按“原样”提供，不提供任何明示或暗示的保证，包括但不限于对适销性、特定用途适用性和无侵权的保证。
+2. 作者不保证本软件不会存在任何缺陷、错误或严重的安全漏洞。
+3. 在任何情况下，作者（B站Up主明明月明月11019）均不对因使用本软件而产生的任何直接、间接、偶然、特殊或后果性的损害（包括但不限于利润损失、数据丢失、业务中断等）承担任何责任，无论是因合同、严格责任还是侵权行为引起的。
+
+【协议终止】
+如果您违反了上述任何条款，您使用、修改或分发本项目的权利将自动终止。
+
+================================================================================
+English Version (For International Users)
+================================================================================
+
+Project Name: MyTools
+Author: Bilibili Creator (明明月明月11019)
+Bilibili Space: https://space.bilibili.com/3707056078982013
+
+1. Grant of License
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, and distribute, subject to the following conditions:
+
+2. Conditions
+(a) The above copyright notice and this permission notice (including the README.txt file located in the same directory as tools.h in any version) shall be included in all copies or substantial portions of the Software. You are strictly prohibited from deleting this file (you may delete files from versions that are not needed).
+(b) Alternatively, you must add a clear declaration about this project (MyTools) in an obvious place in your project's code or documentation, along with the author's Bilibili link.
+
+3. Disclaimer
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+4. Termination
+Your rights under this license will terminate automatically if you fail to comply with any of the terms and conditions stated above.
+
+(Language translation may not be 100% accurate.)

@@ -1,0 +1,9 @@
+# Visual Studio 生成的文件
+.vs/
+x64/
+Debug/
+Release/
+*.obj
+*.exe
+*.pdb
+*.ilk
