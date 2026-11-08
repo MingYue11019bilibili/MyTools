@@ -74,3 +74,5 @@
 1. fix ToolHashMap.h:幽灵数据问题
 > 0.0.3 优化
 1. 优化 README.md 的表述
+> 0.0.4 添加
+1. 添加README.txt
