@@ -4,7 +4,10 @@
 
 ![C Standard](https://img.shields.io/badge/C-C99%2FC11-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
-![Made by](https://img.shields.io/badge/Made_by-MingYue11019bilibili-green)
+![Made by](https://img.shields.io/badge/Made_by-MingYue11019bilibili-green?logo=github)
+
+![Bilibili Name](https://img.shields.io/badge/Bilibili_Name-%E6%98%8E%E6%98%8E%E6%9C%88%E6%98%8E%E6%9C%8811019-8C0C02?logo=bilibili&logoColor=white)
+![Bilibili UID](https://img.shields.io/badge/Bilibili_UID-3707056078982013-ADFFF1?logo=data%3Aimage%2Fjpeg%3Bbase64%2C%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD%2F2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz%2F2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz%2FwAARCAAKAA4DASIAAhEBAxEB%2F8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL%2F8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4%2BTl5ufo6erx8vP09fb3%2BPn6%2F8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL%2F8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3%2BPn6%2F9oADAMBAAIRAxEAPwD9lfE%2Bl2XhfUNTSyi1G%2Bc3Ms7Qya28TZlOXX5p1yuS20cBQpA99TwN4Y0vV%2FECXElxrlvPZWskMcD6zKRtd42feDKdzKyKAw6BiM810Vl4I0XWfGV%2FcXmkaXdzocLJNaxyOowp4JGerMfxPrWho%2BkWlv421N47W3R2jQlljAJJ69u%2BB%2BVAH%2F%2FZ)
 
 **注意：** 本项目不保证绝对无 Bug 或严重漏洞，使用前请阅读 [ LICENSE 文件 ]( LICENSE )。
 
@@ -69,3 +72,5 @@
 1. 添加了主架构等核心模块
 > 0.0.2 修复
 1. fix ToolHashMap.h:幽灵数据问题
+> 0.0.3 优化
+1. 优化 README.md 的表述

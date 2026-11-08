@@ -7,3 +7,5 @@ Release/
 *.exe
 *.pdb
 *.ilk
+# 视频文稿
+.text/
