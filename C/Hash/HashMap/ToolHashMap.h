@@ -143,10 +143,21 @@ TOOLFUNC__ bool toolHashMapPush(TOOL_HashMap* map, int64_t key, int64_t value) {
 		return false;
 	size_t mask = map->cap - 1;
 	size_t idx = (size_t)toolHashMapHashKey(key) & mask;
+	size_t firstTombstone = (size_t)-1;
 	for (;;) {
 		TOOL_HashSlot* s = &map->slots[idx];
-		if (s->key == TOOL_HASH_MAP_HASH_EMPTY || s->key == TOOL_HASH_MAP_HASH_TOMBSTONE) {
-			map->nUsed += (s->key == TOOL_HASH_MAP_HASH_TOMBSTONE) ? 0 : 1;
+	    if (s->key == key) {
+			s->value = value;
+			return true;
+		}
+		if (s->key == TOOL_HASH_MAP_HASH_EMPTY) {
+			if (firstTombstone != (size_t)-1) {
+				s = &map->slots[firstTombstone];
+				idx = firstTombstone;
+			}
+			else {
+				map->nUsed++;
+			}
 			s->key = key;
 			s->value = value;
 			s->liveIdx = (uint32_t)map->nLive;
@@ -154,10 +165,7 @@ TOOLFUNC__ bool toolHashMapPush(TOOL_HashMap* map, int64_t key, int64_t value) {
 			map->nLive++;
 			return true;
 		}
-	    if (s->key == key) {
-			s->value = value;
-			return true;
-		}
+		if ((s->key == TOOL_HASH_MAP_HASH_TOMBSTONE) && (firstTombstone == (size_t)-1))firstTombstone = idx;
 		idx = (idx + 1) & mask;
 	}
 }
