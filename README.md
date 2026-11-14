@@ -1,13 +1,17 @@
 # MyTools - 一个好用的 C 语言单头文件工具库
 
-**作者：** [ 明明月明月11019 ]( https://space.bilibili.com/3707056078982013 )
-
 ![C Standard](https://img.shields.io/badge/C-C99%2FC11-blue)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 ![Made by](https://img.shields.io/badge/Made_by-MingYue11019bilibili-green?logo=github)
+![Passed](https://img.shields.io/badge/Windows-MSVC_100%25_Passed-5C2D91?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjY0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI%2BDQogIDxnPg0KICAgIDxwYXRoIGQ9Ik0xODguMzcwMTA0LDI2My42NDY4NTMgTDkwLjQ0NjAyMzksMTY4LjYwNjU5OCBMMzIuNDk0MTUxNCwyMTIuNzIwNzAxIEwwLjUwODk0MDIzOSwxOTYuNjc1MzE1IEwwLjUzMzQxODMyNyw2Ny4yMTE3MjkxIEwzMi42MTgwNzE3LDUxLjA3NTU2OTcgTDkwLjYxNDMxMDgsOTUuMjIzODQwNiBMMTg4LjI5OTIxOSwwLjA5NDM0MjYyOTUgTDI1NS40Njc2MDIsMjcuMDE5MjE5MSBMMjU1LjQ5MDU1LDIzNi44MjQ0NzggTDE4OC4zNzAxMDQsMjYzLjY0Njg1MyIgZmlsbD0iI0ZGRkZGRiI%2BPC9wYXRoPg0KICAgIDxwYXRoIGQ9Ik0yMzguNDcxNjQ5LDM4LjUxODMxMDggTDE5Mi4yMzc2NDEsMTkuOTg0ODI4NyBMOTEuOTc1OTA0NCwxMTcuNjIyMzExIEwzMC43NzA0ODYxLDcxLjAzMDgyMDcgTDE3LjUyODg2MDYsNzcuNjkwMzkwNCBMMTcuNTA3OTUyMiwxODYuMTg3NDc0IEwzMC42MzY4NzY1LDE5Mi43NzMxIEw5MS43ODg3NDksMTQ2LjIyMjkxNiBMMTkyLjI5ODMyNywyNDMuNzczMTk1IEwyMzguNDkyNTU4LDIyNS4zMTM2NTcgTDIzOC40NzE2NDksMzguNTE4MzEwOCBMMjM4LjQ3MTY0OSwzOC41MTgzMTA4IFogTTM3LjM1ODY2MTQsMTU3LjM5NDYxNCBMMzcuMzI1MDA0LDEwNi40NzEwMTIgTDY1LjY1MzI5MDgsMTMxLjc2MDk1NiBMMzcuMzU4NjYxNCwxNTcuMzk0NjE0IFogTTEyNy45ODkyOTEsMTMxLjc0MjA4OCBMMTg0LjYyNDQ0Niw4OS40MDM2NjUzIEwxODQuNjQ2ODg0LDE3NC40MTE5ODQgTDEyNy45ODkyOTEsMTMxLjc0MjA4OCBaIiBmaWxsPSIjNjgyMTdBIj48L3BhdGg%2BDQogIDwvZz4NCjwvc3ZnPg%3D%3D)
 
-![Bilibili Name](https://img.shields.io/badge/Bilibili_Name-%E6%98%8E%E6%98%8E%E6%9C%88%E6%98%8E%E6%9C%8811019-8C0C02?logo=bilibili&logoColor=white)
+![GCC](https://img.shields.io/badge/Linux-GCC_Not_sure-F34B7D?logo=linux&logoColor=white)
+![Clang](https://img.shields.io/badge/macOS-Clang_Not_sure-000000?logo=apple&logoColor=white)
+
+![Bilibili Name](https://img.shields.io/badge/Bilibili_Name-%E6%98%8E%E6%98%8E%E6%9C%88%E6%98%8E%E6%9C%8811019-8C0C02?logo=bilibili&logoColor=blue)
 ![Bilibili UID](https://img.shields.io/badge/Bilibili_UID-3707056078982013-ADFFF1?logo=data%3Aimage%2Fjpeg%3Bbase64%2C%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F4QAiRXhpZgAATU0AKgAAAAgAAQESAAMAAAABAAEAAAAAAAD%2F2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz%2F2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz%2FwAARCAAKAA4DASIAAhEBAxEB%2F8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL%2F8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4%2BTl5ufo6erx8vP09fb3%2BPn6%2F8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL%2F8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3%2BPn6%2F9oADAMBAAIRAxEAPwD9lfE%2Bl2XhfUNTSyi1G%2Bc3Ms7Qya28TZlOXX5p1yuS20cBQpA99TwN4Y0vV%2FECXElxrlvPZWskMcD6zKRtd42feDKdzKyKAw6BiM810Vl4I0XWfGV%2FcXmkaXdzocLJNaxyOowp4JGerMfxPrWho%2BkWlv421N47W3R2jQlljAJJ69u%2BB%2BVAH%2F%2FZ)
+
+**作者：** [ 明明月明月11019 ]( https://space.bilibili.com/3707056078982013 )
 
 **注意：** 本项目不保证绝对无 Bug 或严重漏洞，使用前请阅读 [ LICENSE 文件 ]( LICENSE )。
 
@@ -58,21 +62,28 @@
 #define TOOL_HASH_MAP_NO_SIMPLE_FUNC_NAME
 
 #include "tools.h"
-
 ```
 
 ## 运行环境
->   Windows: Visual Studio 2019 及以上, MinGW
->   Linux / macOS: GCC, Clang
+
+*   **Windows**: Visual Studio 2019 及以上, MinGW (已实测通过)
+*   **Linux / macOS**: GCC, Clang (未实测，理论上支持)
 
 ---
 
-# 更新日志
-> 0.0.1 首发
-1. 添加了主架构等核心模块
-> 0.0.2 修复
-1. fix ToolHashMap.h:幽灵数据问题
-> 0.0.3 优化
-1. 优化 README.md 的表述
-> 0.0.4 添加
-1. 添加README.txt
+## 更新日志
+
+### v0.0.5
+*   **docs**：优化 README.md 排版。
+
+### v0.0.4
+*   **docs**: 优化 README.md 排版，添加自定义协议 `README.txt`。
+
+### v0.0.3
+*   **docs**: 优化 README.md 的表述。
+
+### v0.0.2
+*   **fix**: 修复 `ToolHashMap.h` 中的幽灵数据问题（墓碑机制下的延迟插入）。
+
+### v0.0.1
+*   **feat**: 首发版本。添加了主架构等核心模块。
