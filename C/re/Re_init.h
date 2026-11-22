@@ -1,5 +1,10 @@
 ﻿// re/Re_init.h
 
+#pragma once
+
+#ifndef MMYMYS_TOOLS_RE_INIT_H
+#define MMYMYS_TOOLS_RE_INIT_H
+
 #include <ctype.h>
 #include <inttypes.h>
 #include <stdarg.h>
@@ -313,3 +318,5 @@ TOOLFUNC__ ToolReCheckResult toolReCheck(const char* reString) {
     if (inInterval) return TOOL_RE_CHECK_ERROR_FORMAT("[: 区间未闭合");
     return TOOL_RE_CHECK_OK;
 }
+
+#endif // MMYMYS_TOOLS_RE_INIT_H

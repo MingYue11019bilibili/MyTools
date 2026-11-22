@@ -80,6 +80,9 @@
 ---
 
 ## 更新日志
+
+### v0.0.9
+*   **fix**：修复 re 没有头文件守卫问题
 ### v0.0.8
 *   **chore**：增加了 re 模块的检查部分，更多详见[此链接](https://github.com/MingYue11019bilibili/MyTools/compare/v0.0.7...v0.0.8)
 ### v0.0.7
