@@ -49,6 +49,14 @@ namespace tool {
             other.cap = 0;
         }
 
+        void reserve(size_t newCap) {
+            if (newCap <= cap) return; // 已经够大了就不管
+            T* newData = (T*)std::realloc(data, newCap * sizeof(T));
+            if (!newData) throw std::bad_alloc();
+            data = newData;
+            cap = newCap;
+        }
+
         void push_back(const T& val) {
             if (len >= cap) {
                 size_t newCap = cap == 0 ? 4 : cap + (cap >> 1);

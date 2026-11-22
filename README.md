@@ -80,7 +80,8 @@
 ---
 
 ## 更新日志
-
+### v0.0.8
+*   **chore**：增加了 re 模块的检查部分，更多详见[此链接](https://github.com/MingYue11019bilibili/MyTools/compare/v0.0.7...v0.0.8)
 ### v0.0.7
 *   **feat and chore**：增加 C++ 语言支持框架。删除 re 计划，原因：能力有限，目前对我来说并不现实。
 
