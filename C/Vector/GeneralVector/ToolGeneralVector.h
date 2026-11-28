@@ -25,6 +25,7 @@
 
 #ifndef TOOL_GENERAL_VECTOR_NO_SIMPLE_FUNC_NAME
 #define TOOL_GEN_VECTOR_INIT genVectorInit
+#define TOOL_GEN_VECTOR_GET genVectorGet
 #define TOOL_GEN_VECTOR_PUSH genVectorPush
 #define TOOL_GEN_VECTOR_POP genVectorPop
 #define TOOL_GEN_VECTOR_CLEAR genVectorClear
@@ -32,6 +33,7 @@
 #define genVectorFree(...) TOOL_EXPAND_GV(TOOL_GET_NAME_3_GV(__VA_ARGS__, TOOL_GEN_VECTOR_FREE_1, TOOL_GEN_VECTOR_FREE_2))(__VA_ARGS__)
 #else
 #define TOOL_GEN_VECTOR_INIT toolGeneralVectorInit
+#define TOOL_GEN_VECTOR_GET toolGeneralVectorGet
 #define TOOL_GEN_VECTOR_PUSH toolGeneralVectorPushBack
 #define TOOL_GEN_VECTOR_POP toolGeneralVectorPopBack
 #define TOOL_GEN_VECTOR_CLEAR toolGeneralVectorClear
@@ -76,6 +78,12 @@ TOOL_CHKRET TOOLFUNC__ bool TOOL_GEN_VECTOR_PUSH(TOOL_GEN_VECTOR_STRUCT_NAME* co
 	memcpy(target, p, vec->size);
 	vec->len++;
 	return true;
+}
+
+TOOLFUNC__ void* TOOL_GEN_VECTOR_GET(const TOOL_GEN_VECTOR_STRUCT_NAME* const vec, size_t index) {
+    TOOL_ASSERT(vec != NULL, "Vector 不能为空");
+    TOOL_ASSERT(index < vec->len, "Vector 越界访问");
+    return (char*)vec->start + (index * vec->size);
 }
 
 TOOL_CHKRET TOOLFUNC__ bool TOOL_GEN_VECTOR_POP(TOOL_GEN_VECTOR_STRUCT_NAME* const vec, void* const out) {
