@@ -81,6 +81,9 @@
 
 ## 更新日志
 
+### v0.1.0
+*   **feat**：🎉🎉🎉 re 模块大更新！大幅度完善语法体系，极度接近 Python 的 re 模块。详见[此链接](https://github.com/MingYue11019bilibili/MyTools/compare/v0.0.9...v0.1.0)
+
 ### v0.0.9
 *   **fix**：修复 re 没有头文件守卫问题
 ### v0.0.8
